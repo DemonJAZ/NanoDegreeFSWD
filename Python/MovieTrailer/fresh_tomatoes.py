@@ -43,8 +43,8 @@ main_page_head = '''
             height: 600px;
             color: white;
             text-shadow: 2px 2px #1a0000;
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
             -webkit-transition: all 200ms ease-in;
             -webkit-transform: scale(1);
             -ms-transition: all 200ms ease-in;
