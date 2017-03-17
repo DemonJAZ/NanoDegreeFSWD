@@ -6,15 +6,3 @@
 .name{
   font-family: 'Roboto', sans-serif;
 }
-
-hr{
-  border-top: 5px solid #a7a7a7;
-}
-
-a{
-  padding: 2px;
-}
-
-a:hover{
-  background-color: #ff99ff;
-}
