@@ -3,10 +3,14 @@
   box-sizing: border-box;
 }*/
 
-.name{
-  font-family: 'Roboto', sans-serif;
+hr {
+  border-top: 4px solid #7b7b7b !important;
 }
 
-hr{
-  border-top: 4px solid #7b7b7b !important;
+.name {
+  font-family: "Roboto", sans-serif;
+}
+
+#devname {
+  font-size: 50px;
 }
