@@ -2,7 +2,7 @@ import webapp2
 import jinja2
 import os
 
-template_dir = os.path.join(os.path.dirname(__file__),'static')
+template_dir = os.path.join(os.path.dirname(__file__),'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),autoescape = True)
 
 class Handler(webapp2.RequestHandler):
@@ -23,6 +23,10 @@ class MainPage(Handler):
 
     def get(self):
         self.render_front("home.html")
+
+    def post(self):
+        title = self.request.get("title")
+        blog = self.request.get("blog")
 
 
 app = webapp2.WSGIApplication([
