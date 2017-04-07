@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <form>
+      <input type="text" name="foods">
+      {% if items %}
+      {% for item in items %}
+        <input type="hidden" name="foods" value="{{item}}">
+      {% endfor %}
+      {% endif %}
+      <button onclick="submit">Add</button>
+
+    </form>
+    <br>
+    <br>
+    <h2>Shopping Kart</h2>
+    <ul>
+      {%if items %}
+      {% for item in items %}
+        <li>{{item | escape}}</li> <!--Or add autoescape = true at main.py jinja-->
+      {% endfor %}
+      {% endif %}
+    </ul>
+{% endblock %}

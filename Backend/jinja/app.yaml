@@ -6,6 +6,6 @@ handlers:
 - url: /.*
   script: main.app
 
-librarie:
+libraries:
 - name: jinja2
   version: latest
